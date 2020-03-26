@@ -16,14 +16,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
+  width: 95%;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -44,15 +47,17 @@ table {
 ul {
   padding: 0;
   margin: 0;
+
   li {
     list-style: none;
   }
+  
 }
 
 p {
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;

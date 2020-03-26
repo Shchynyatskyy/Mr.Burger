@@ -1,34 +1,57 @@
-$itemsMargin: 13px;
+.menu {
+  background: url("/img/bg/menu.jpg") center center / cover no-repeat;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  flex-direction: row;
 
-.menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  display: flex;
-  align-items: center;
-  &:before {
-    content: "";
-    display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: currentColor;
-    margin-left: $itemsMargin;
+  &__list {
+    display: flex;
+    height: 100%;
+    margin-left: auto;
   }
 
-  &:first-child {
-    &:before {
-      display: none;
+  &__item {
+    display: flex;
+    height: 100%;
+
+    &--active {
+      .menu__content {
+        width: rem(500px);
+        background-color: rgba(0, 0, 0, 0.7);
+      }
     }
   }
-}
+  &__link {
+    width: rem(80px);
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include gagalin();
+    font-size: rem(30px);
+    position: relative;
 
-.menu__link {
-  margin-left: $itemsMargin;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
+    span {
+      position: absolute;
+      transform: rotate(-90deg);
+      bottom: rem(140px);
+      left: rem(-64px);
+      white-space: nowrap;
+
+    }
+  }
+
+  &__content {
+    width: 0;
+    overflow: hidden;
+  }
+
+  &__text {
+    margin-top: rem(60px);
+    margin-left: rem(37px);
+    margin-right: rem(37px);
+  }
 }
