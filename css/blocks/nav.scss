@@ -14,7 +14,7 @@ $itemsMargin: rem(13px);
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(47, 50, 52, 0.9);
         z-index: 1;
       }
     }
@@ -25,6 +25,7 @@ $itemsMargin: rem(13px);
     
     @include tablets{
       flex-direction: column;
+      height: 50%;justify-content: space-around;
       }
 
   }
@@ -32,6 +33,7 @@ $itemsMargin: rem(13px);
   .nav__item {
     display: flex;
     align-items: center;
+
 
     &:before {
       content: "";
@@ -42,7 +44,9 @@ $itemsMargin: rem(13px);
       background: currentColor;
       margin-left: $itemsMargin;
 
-      
+      @include tablets {
+      margin-bottom: 16%;
+    }  
     }
 
     &:first-child {
@@ -50,6 +54,10 @@ $itemsMargin: rem(13px);
       &:before {
         display: none;
       }
+    }
+    
+    @include tablets {
+      flex-direction: column;
     }
   }
 
@@ -59,5 +67,6 @@ $itemsMargin: rem(13px);
     text-transform: uppercase;
     font-size: rem(13px);
     font-weight: 500;
+    
   }
 }
