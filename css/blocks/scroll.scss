@@ -7,16 +7,14 @@
   
   &__down {
     position: absolute;
-    bottom: rem(40px);
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
     width: rem(29px);
     height: rem(14px);
-    background: url(/img/icons/arrow-scroll.png);
   }
 
   &__left {
-    background: url(/img/icons/scroll_left.png);
     background-size: cover;
     background-position: center center no-repeat;
     width: rem(17px);
@@ -24,7 +22,6 @@
   }
 
   &__right {
-    background: url(/img/icons/scroll_right.png);
     background-size: cover;
     background-position: center center no-repeat;
     width: rem(17px);

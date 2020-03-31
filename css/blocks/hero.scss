@@ -2,27 +2,40 @@
   background: url("/img/bg/hero.jpg") center center / cover no-repeat;
   color: #fff;
   position: relative;
-}
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.hero__desc {
-  font-size: rem(65px);
-  @include lifehack();
-  line-height: 1.1;
-}
-
-.hero__content {
-  display: flex;
-  align-items: center;
-  flex: .8;
-}
-
-.hero__text {
-  width: 50%;
-  padding-top: rem(94px);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    flex: .8;
+  
+    @include tablets {
+      flex-direction: column;
+    }
+  
+  }
+  
+  &__image {
+    height: rem(330px);
+    width: rem(370px);
+  }
+  
+  &__desc {
+    font-size: rem(65px);
+    @include lifehack();
+    line-height: 1.1;
+  }
+  
+  
+  &__text {
+  
+    @include tablets {
+      text-align: center;
+    }
+  }
 }

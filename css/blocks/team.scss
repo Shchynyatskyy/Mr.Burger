@@ -1,4 +1,4 @@
-.team {
+.proff {
   background: url("/img/bg/team.jpg") center center / cover no-repeat;
   color: #fff;
   position: relative;
@@ -16,25 +16,67 @@
     bottom: 0;
   }
 
-  &__title {
-    margin-top: rem(100px);
-  }
+ 
+}
+
+.team {
+
+  @include ubuntu;
 
   &__item {
-    display: flex;
-    flex-direction: column;
-  }
+    color: white;
+    &.active {
+      .team__text {
+        height: auto;
+      }
+      .team__proffesion{
+        height: auto;
+        font-weight: bold;
+      }
+      
+      .team__avatar {
+        display: block;
+      }
 
-  &__name {
-    text-decoration: none;
-    text-transform: uppercase;
-    @include gagalin();
-    font-size: rem(14px);
-    color: $yellow;
+      .team__content{
+        display: block;
+      }
+    }
   }
-
-  &__content {
-    width: 0;
+  &__text {
     overflow: hidden;
+    height: 0;
   }
+  &__proffesion{
+    overflow: hidden;
+    height: 0;
+  }
+  
+  &__name {
+    @include gagalin;
+    color: #f9b43b;
+    font-size: 24,5px;
+  }
+  
+  &__wrapper {
+    display: flex;
+  }
+  
+  &__avatar {
+    background: url(/img/content/team_avatar.jpg) center center;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    height: rem(100px);
+    width: rem(100px);
+    object-fit: cover;
+    display: none;
+  }
+}
+
+
+.team__content{
+  display: none;
+  height: rem(100px);
+  width: rem(200px);
 }

@@ -7,8 +7,8 @@ $white: #fff;
 @import "_misc/normalize.scss";
 
 @import "_misc/fonts";
-@import "_misc/layout";
 @import "_misc/media.scss";
+@import "_misc/layout";
 
 @import "./blocks/section.scss";
 @import "./blocks/header.scss";
@@ -22,12 +22,12 @@ $white: #fff;
 @import "./blocks/review.scss";
 @import "./blocks/team.scss";
 @import "./blocks/menu.scss";
-@import "./blocks/order.scss";
+@import "./blocks/delivery.scss";
 @import "./blocks/map.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/fixed__menu.scss";
 @import "./blocks/footer.scss";
-
+@import "./blocks/drop__down.scss";
 
 
 

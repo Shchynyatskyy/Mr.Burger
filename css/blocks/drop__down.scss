@@ -1,0 +1,66 @@
+.composition {
+  display: flex;
+  position: absolute;
+  top: rem(50px);
+
+    &__img{
+    height: rem(90px);
+    width: rem(90px);
+    background: url(/img/icons/composition.png) center center no-repeat;
+    background-color: #f08c33;
+    border-radius: rem(5px);
+
+  }
+    @include tablets {
+      left: rem(50px);
+      top: rem(50px);
+    }
+
+  &:hover {
+    .composition__img {
+      background-color: #e35028;
+    }
+
+
+    .dropdown {
+      display: flex;
+      color:#2f3234;
+      background: rgba(255, 255, 255, 0.9);
+      flex-direction: column;
+      border-radius: rem(5px);
+      left: rem(135px);
+      top: rem(167px);
+      width: rem(270px);
+      height: rem(332px);
+  
+        &__item {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex: 1;
+          @include ubuntu;
+        }
+        
+        &__text {
+          font-weight: bold;
+          text-align: left;
+        }
+     } 
+  }
+}
+
+.dropdown {
+  display: none;
+}
+
+.calories {
+  position: absolute;
+  left: rem(70px);
+  bottom: rem(50px);
+
+  @include tablets {
+    top: rem(70px);
+    right: rem(70px);
+    left: auto;
+  }
+}

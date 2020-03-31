@@ -28,6 +28,10 @@ justify-content: space-around;
       &__price {
         display: flex;
       }
+
+      @include tablets {
+        flex-direction: column;
+      }
     }
   }
 }

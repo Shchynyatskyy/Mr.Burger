@@ -11,7 +11,7 @@
 
 <body>
   <div class="wrapper">
-    <section class="section section--align--top hero">
+    <section class="section section--align--top hero" id="scroll_1">
       <div class="container hero__container">
         <header class="header">
           <a class="logo" href="#">
@@ -39,15 +39,17 @@
           <div class="hero__image">
             <img src="./img/content/burger.png" class="hero__image-elem" alt="burger">
           </div>
-            <div class="hero__text">
-              <h1 class="section__title">Мы делаем</h1>
-              <h3 class="hero__desc">натуральные бургеры</h3>
-            </div>
+          <div class="hero__text">
+            <h1 class="section__title">Мы делаем</h1>
+            <h3 class="hero__desc">натуральные бургеры</h3>
           </div>
-          <button type="button" class="scroll scroll__down"></button>
         </div>
+        <button type="button" class="scroll scroll__down">
+          <img src="/img/icons/arrow-scroll.png" alt="">
+        </button>
+      </div>
     </section>
-    <section class="section features">
+    <section class="section features" id="scroll_2">
       <div class="container">
         <h2 class="section__title section__title--centered section__title--color--black">Мы лучшие</h2>
         <ul class="features__list">
@@ -87,16 +89,66 @@
         </ul>
       </div>
     </section>
-    <section class="section slider">
-      <button type="button" class="scroll scroll__left"></button>
+    <section class="section slider" id="scroll_3">
+      <button type="button" class="scroll scroll__left">
+        <img src="/img/icons/scroll_left.png" alt="">
+      </button>
       <ul class="slides">
         <li class="slide">
           <div class="slide__picture">
-            <div class="composition"></div>
+            <div class="composition">
+              <div class="composition__img">
+              </div>
+              <ul class="dropdown">
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_beef.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Говядина</span>
+                    <span class="dropdown__weight">300гр</span>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_bread.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Булочки</span>
+                    <span class="dropdown__weight">100гр</span>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_salad.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Зелень</span>
+                    <span class="dropdown__weight">70гр</span>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_sauce.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Соус</span>
+                    <span class="dropdown__weight">150гр</span>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_cucumber.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Овощи</span>
+                    <span class="dropdown__weight">200гр</span>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__pic">
+                    <img src="/img/icons/drop_cheese.png" alt="">
+                  </div>
+                    <span class="dropdown__text">Сыр</span>
+                    <span class="dropdown__weight">80гр</span              </li>
+              </ul>
+            </div>
             <div class="slide__image">
               <img src="/img/content/dark_beef_burger.png" alt="Dark beef burger">
             </div>
-            <div class="calories"></div>
+            <div class="calories">
+              <img src="/img/icons/kkal.png" alt="">
+            </div>
           </div>
           <div class="slide__content">
             <h2 class="section__title section__title--color--white">Dark beef burger</h2>
@@ -112,67 +164,71 @@
           </div>
         </li>
       </ul>
-      <button type="button" class="scroll scroll__right"></button>
+      <button type="button" class="scroll scroll__right">
+        <img src="/img/icons/scroll_right.png" alt="">
+      </button>
     </section>
-    <section class="section team">
-      <div class="team__section">
+    <section class="section proff" id="scroll_4">
+      <div class="proff__section">
         <div class="section__title team__title">Команда</div>
-        <ul class="team__list">
-          <li class="team__item">
-            <a class="team__name" href="#">Дэниэл Редклифф</a>
+        <ul class="team">
+        <li class="team__item">
+          <p class="team__name">Дэниэл Редклиф</p>
+          <div class="team__wrapper">
+            <div class="team__avatar"></div>
             <div class="team__content">
-              <div class="team__avatar">
-                <div class="team__img" style="background-image: url('/img/content/team_avatar.jpg')">
-                </div>
-              </div>
-              <div class="team-acco__text">
-                <div class="team-acco__title">Шеф-повар</div>
-                <div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-              </div>
+              <p class="team__proffesion">Оператор</p>
+              <p class="team__text">
+                С радостью поможет подобрать идеальный бургер и оформить заказ.  
+              </p>
             </div>
-          </li>
-          <li class="team__item team__item--active">
-            <a class="team__name" href="#">Ричард Джеймс</a>
+          </div>
+        </li>
+        <li class="team__item">
+          <p class="team__name">Дэниэл Редклиф</p>
+          <div class="team__wrapper">
+            <div class="team__avatar"></div>
             <div class="team__content">
-              <div class="team__avatar">
-                <div class="team__img" style="background-image: url('/img/content/team_avatar.jpg')"></div>
-              </div>
-              <div class="team-acco__text">
-                <div class="team-acco__title">Оператор</div>
-                <div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-              </div>
+              <p class="team__proffesion">Оператор</p>
+              <p class="team__text">
+                С радостью поможет подобрать идеальный бургер и оформить заказ.  
+              </p>
             </div>
-          </li>
-          <li class="team__item"><a class="team__name" href="#">Джейк Финн</a>
+          </div>
+        </li>
+        <li class="team__item">
+          <p class="team__name">Дэниэл Редклиф</p>
+          <div class="team__wrapper">
+            <div class="team__avatar"></div>
             <div class="team__content">
-              <div class="team__avatar">
-                <div class="team__img" style="background-image: url('/img/content/team_avatar.jpg')"></div>
-              </div>
-              <div class="team-acco__text">
-                <div class="team-acco__title">Менеджер</div>
-                <div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-              </div>
+              <p class="team__proffesion">Оператор</p>
+              <p class="team__text">
+                С радостью поможет подобрать идеальный бургер и оформить заказ.  
+              </p>
             </div>
-          </li>
-          <li class="team__item"><a class="team__name" href="#">Николай Иванов</a>
+          </div>
+        </li>
+        <li class="team__item">
+          <p class="team__name">Дэниэл Редклиф</p>
+          <div class="team__wrapper">
+            <div class="team__avatar"></div>
             <div class="team__content">
-              <div class="team__avatar">
-                <div class="team__img" style="background-image: url('/img/content/team_avatar.jpg')"></div>
-              </div>
-              <div class="team-acco__text">
-                <div class="team-acco__title">Шоколатье</div>
-                <div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-              </div>
+              <p class="team__proffesion">Оператор</p>
+              <p class="team__text">
+                С радостью поможет подобрать идеальный бургер и оформить заказ.  
+              </p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </li>
+        
+      </ul>
       </div>
     </section>
-    <section class="section menu">
+    <section class="section menu" id="scroll_5">
       <div class="section__title section__title--color--white menu__title">Меню</div>
       <ul class="menu__list">
-        <li class="menu__item menu__item--active">
-          <a class="menu__link" href="#" style="background-image: url('/img/content/meat.jpg')">
+        <li class="menu__item">
+          <a class="menu__link" href="" style="background-image: url('/img/content/meat.jpg')">
             <span class="menu__item--title">Для мясоедов</span>
           </a>
           <div class="menu__content">
@@ -206,7 +262,7 @@
         </li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="scroll_6">
       <ul class="reviews__list">
         <li class="reviews__item review">
           <div class="review__img-wrapper">
@@ -322,85 +378,77 @@
         </li>
       </ul>
     </section>
-    <section class="section order">
+    <section class=" section delivery" id="scroll_8">
       <div class="container">
-        <div class="section__title">Закажите доставку</div>
-        <div class="order__form">
-          <form class="order__form-tag" id="order-form">
-            <div class="order__form-col">
-              <div class="order__form-row order__form-row_double">
-                <label class="order__form-block">
-                  <div class="order__form-label">Имя</div>
-                  <input class="order__form-input" name="name" type="text" placeholder="">
-                </label>
-                <label class="order__form-block">
-                  <div class="order__form-label">Телефон</div>
-                  <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
-                </label>
-              </div>
-              <div class="order__form-row">
-                <label class="order__form-block">
-                  <div class="order__form-label">Улица</div>
-                  <input class="order__form-input" name="street" type="text" placeholder="">
-                </label>
-              </div>
-              <div class="order__form-row order__form-row_quatro">
-                <label class="order__form-block">
-                  <div class="order__form-label">Дом</div>
-                  <input class="order__form-input" name="home" type="text" placeholder="">
-                </label>
-                <label class="order__form-block">
-                  <div class="order__form-label">Корпус</div>
-                  <input class="order__form-input" name="part" type="text" placeholder="">
-                </label>
-                <label class="order__form-block">
-                  <div class="order__form-label">Квартира</div>
-                  <input class="order__form-input" name="appt" type="text" placeholder="">
-                </label>
-                <label class="order__form-block">
-                  <div class="order__form-label">Этаж</div>
-                  <input class="order__form-input" name="floor" type="text" placeholder="">
-                </label>
-              </div>
-            </div>
-            <div class="order__form-col">
-              <div class="order__form-row">
-                <label class="order__form-block">
-                  <div class="order__form-label">Комментарий</div>
-                  <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
-                </label>
-              </div>
-              <div class="order__form-buttons">
-                <div class="order__form-row">
-                  <label class="order__radio">
-                    <input class="order__radio-elem" name="payment" type="radio">
-                    <div class="order__radio-fake"></div>
-                    <div class="order__radio-title">Потребуется сдача</div>
+          <h2 class="section__title">Закажите доставку</h2>
+          <form class="delivery-form">
+              <div class="delivery-form__column delivery-form__column_buyer">
+                  <label class="delivery-form__name">
+                      <span class="delivery-form__label-name">Имя</span>
+                      <input type="text" name="clientName">
                   </label>
-                  <label class="order__radio">
-                    <input class="order__radio-elem" name="payment" type="radio">
-                    <div class="order__radio-fake"></div>
-                    <div class="order__radio-title">Оплата по карте</div>
+                  <label class="delivery-form__phone">
+                      <span class="delivery-form__label-name">Телефон</span>
+                      <input type="tel" name="clientPhone">
                   </label>
-                </div>
-                <div class="order__form-row">
-                  <label class="order__radio order__radio_checkbox">
-                    <input class="order__radio-elem" name="callback" type="checkbox">
-                    <div class="order__radio-fake"></div>
-                    <div class="order__radio-title">Не перезванивать</div>
+                  <label class="delivery-form__street">
+                      <span class="delivery-form__label-name">Улица</span>
+                      <input type="text" name="clientStreet">
                   </label>
-                </div>
-                <div class="order__form-row">
-                  <input class="order__form-button" name="" type="submit" value="Заказать">
-                  <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
-                </div>
+                  <label class="delivery-form__house">
+                      <span class="delivery-form__label-name">Дом</span>
+                      <input type="text" name="clientHouse">
+                  </label>
+                  <label class="delivery-form__corps">
+                      <span class="delivery-form__label-name">Корпус</span>
+                      <input type="text" name="clientCorps">
+                  </label>
+                  <label class="delivery-form__apartment">
+                      <span class="delivery-form__label-name">Квартира</span>
+                      <input type="text" name="clientApartment">
+                  </label>
+                  <label class="delivery-form__floor">
+                      <span class="delivery-form__label-name">Этаж</span>
+                      <input type="text" name="clientFloor">
+                  </label>
               </div>
-            </div>
+              <div class="delivery-form__column delivery-form__column_info">
+                  <label class="delivery-form__comment">
+                      <span class="delivery-form__label-name">Комментарий</span>
+                      <textarea name="clientComment"></textarea>
+                  </label>
+                  <div class="delivery-form__change">
+                      <label class="delivery-form__change-item">
+                          <input class="delivery-form__change-input" type="radio" name="change">
+                          <div class="delivery-form__radio-btn"></div>
+                          <span class="delivery-form__label-name">
+                              Потребуется сдача
+                          </span>
+                      </label>
+                      <label class="delivery-form__change-item">
+                          <input class="delivery-form__change-input" checked type="radio" name="change">
+                          <div class="delivery-form__radio-btn"></div>
+                          <span class="delivery-form__label-name">
+                              Оплата по карте
+                          </span>
+                      </label>
+                  </div>
+                  <label class="delivery-form__call-back">
+                      <input class="delivery-form__input-call" checked type="checkbox">
+                      <div class="delivery-form__chek-call">
+                          <div class="chek-mark"></div>
+                      </div>
+                      <span class="delivery-form__label-name">Не перезванивать</span>
+                  </label>
+                  <div class="delivery-form__btn">
+                      <input class="delivery-form__btn_submit btn" type="submit" value="Заказать">
+                      <input class="delivery-form__btn_reset" type="reset" value="Очистить">
+                  </div>
+              </div>
           </form>
-        </div>
       </div>
     </section>
-    <section class="section map">
+    <section class="section map" id="scroll_9">
       <div class="yandex-map" id="map"></div>
       <footer class="footer">
         <div class="container footer__container">
@@ -409,14 +457,26 @@
           </div>
           <div class="footer__col footer__col_right">
             <ul class="socials">
-              <li class="socials__item"><a class="socials__link" href="#">
-                  </a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  </a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  </a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  </a></li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <img src="/img/icons/vk.png" alt="Vkontakte">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <img src="/img/icons/fb.png" alt="facebook">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <img src="/img/icons/inst.png" alt="instagram">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <img src="/img/icons/twitter.png" alt="twitter">
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -424,16 +484,17 @@
     </section>
   </div>
   <ul class="fixed__menu">
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
-    <li class="fixed__menu--item"><a class="fixed__menu--link" href=""></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_1"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_2"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_3"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_4"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_5"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_6"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_7"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_8"></a></li>
+    <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_9"></a></li>
   </ul>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>
