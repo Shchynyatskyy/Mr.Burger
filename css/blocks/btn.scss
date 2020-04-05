@@ -6,12 +6,15 @@
   font-size: rem(13px);
   display: inline-block;
   padding: rem(10px) rem(15px);
-  margin-left: rem(15px);
   box-shadow: none;
   border: none;
   color: $white;
   font-weight: bold;
   height: rem(35px);
+
+  &__hero {
+    margin-left: rem(15px);
+  }
 
   &__reset {
     background: none;
@@ -19,3 +22,4 @@
     font-weight: normal;
   }
 }
+
