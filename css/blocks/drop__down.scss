@@ -12,8 +12,8 @@
 
   }
     @include tablets {
-      left: rem(50px);
-      top: rem(50px);
+      left: 0;
+      top: 0;
     }
 
   &:hover {
@@ -28,8 +28,8 @@
       background: rgba(255, 255, 255, 0.9);
       flex-direction: column;
       border-radius: rem(5px);
-      left: rem(135px);
-      top: rem(167px);
+      top: 0;
+      left: 0;
       width: rem(270px);
       height: rem(332px);
   
@@ -55,12 +55,12 @@
 
 .calories {
   position: absolute;
-  left: rem(70px);
-  bottom: rem(50px);
+  left: 0;
+  bottom: 0;
 
   @include tablets {
-    top: rem(70px);
-    right: rem(70px);
+    top: 0;
+    right: 0;
     left: auto;
   }
 }

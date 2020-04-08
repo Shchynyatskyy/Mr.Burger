@@ -5,6 +5,11 @@
   background-size: cover;
   flex-direction: row;
 
+  &__title {
+    margin-top: rem(111px);
+    margin-left: rem(102px);
+  }
+
   &__list {
     display: flex;
     height: 100%;
@@ -55,3 +60,4 @@
     margin-right: rem(37px);
   }
 }
+

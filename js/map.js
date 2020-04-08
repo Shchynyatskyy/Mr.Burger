@@ -4,8 +4,8 @@ function initMap() {
       document.getElementById('map'),
       {center: new google.maps.LatLng(48.465538, 35.044467), 
         zoom: 14, 
-        // gestureHandling: 'none', //отключение перемещения карты
-        // zoomControl: false, //отключение зума
+        gestureHandling: 'none', //отключение перемещения карты
+        zoomControl: false, //отключение зума
         disableDefaultUI: true //отключение интерфейса "по-умолчанию"
       });
 

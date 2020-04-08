@@ -916,7 +916,7 @@ img {
   position: relative;
 }
 .proff__section {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(49, 52, 53, 0.9);
   height: 100%;
   width: 50%;
   display: flex;
@@ -932,8 +932,16 @@ img {
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: 300;
 }
-.team__item {
+.team__title {
+  margin-top: 7.0625rem;
+}
+.team__name {
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
   color: white;
+  font-size: 14px;
+}
+.team__item {
+  margin-bottom: 2.1875rem;
 }
 .team__item.active .team__text {
   height: auto;
@@ -948,18 +956,19 @@ img {
 .team__item.active .team__content {
   display: block;
 }
+.team__item.active .team__name {
+  color: #f9b43b;
+}
 .team__text {
   overflow: hidden;
   height: 0;
+  margin-left: 1.3125rem;
+  margin-top: 0.625rem;
 }
 .team__proffesion {
   overflow: hidden;
   height: 0;
-}
-.team__name {
-  font-family: "Gagalin-Regular", Helvetica, sans-serif;
-  color: #f9b43b;
-  font-size: 24, 5px;
+  margin-left: 1.3125rem;
 }
 .team__wrapper {
   display: flex;
@@ -974,11 +983,18 @@ img {
   object-fit: cover;
   display: none;
 }
+.team__avatar--redkliff {
+  background: url(/img/content/redkliff.jpg) center center/cover no-repeat;
+}
 
 .team__content {
   display: none;
   height: 6.25rem;
   width: 12.5rem;
+}
+
+.team__name .team__item .active {
+  color: #f9b43b;
 }
 
 .menu {
@@ -987,6 +1003,10 @@ img {
   position: relative;
   background-size: cover;
   flex-direction: row;
+}
+.menu__title {
+  margin-top: 6.9375rem;
+  margin-left: 6.375rem;
 }
 .menu__list {
   display: flex;
@@ -1207,34 +1227,36 @@ img {
 .slider {
   background: url("/img/bg/slider.jpg") center center/cover no-repeat;
   color: #fff;
-  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.slider .slides {
-  display: flex;
-  align-items: center;
+.slider__wrapper {
   width: 88%;
   height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slider .slides .slide {
+.slider .slide {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
+  height: 35.625rem;
 }
-.slider .slides .slide__picture {
+.slider .slide__picture {
   flex: 1;
 }
-.slider .slides .slide__content {
+.slider .slide__content {
   flex: 1;
 }
-.slider .slides .slide__price {
+.slider .slide__price {
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .slider .slides .slide {
+  .slider .slide {
     flex-direction: column;
   }
 }
@@ -1357,8 +1379,8 @@ img {
 }
 @media screen and (max-width: 768px) {
   .composition {
-    left: 3.125rem;
-    top: 3.125rem;
+    left: 0;
+    top: 0;
   }
 }
 .composition:hover .composition__img {
@@ -1370,8 +1392,8 @@ img {
   background: rgba(255, 255, 255, 0.9);
   flex-direction: column;
   border-radius: 0.3125rem;
-  left: 8.4375rem;
-  top: 10.4375rem;
+  top: 0;
+  left: 0;
   width: 16.875rem;
   height: 20.75rem;
 }
@@ -1394,13 +1416,13 @@ img {
 
 .calories {
   position: absolute;
-  left: 4.375rem;
-  bottom: 3.125rem;
+  left: 0;
+  bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .calories {
-    top: 4.375rem;
-    right: 4.375rem;
+    top: 0;
+    right: 0;
     left: auto;
   }
 }
@@ -1442,4 +1464,5 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }

@@ -4,7 +4,7 @@
   position: relative;
 
   &__section {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba($color: #313435, $alpha: 0.9);
     height: 100%;
     width: 50%;
     display: flex;
@@ -20,15 +20,24 @@
 }
 
 .team {
-
+  &__title {
+    margin-top: rem(113px);
+  }
+  
+  &__name {
+    @include gagalin;
+    color: white;
+    font-size: 14px;
+  }
   @include ubuntu;
 
   &__item {
-    color: white;
+    margin-bottom: rem(35px);
     &.active {
       .team__text {
         height: auto;
       }
+
       .team__proffesion{
         height: auto;
         font-weight: bold;
@@ -41,22 +50,26 @@
       .team__content{
         display: block;
       }
+
+      .team__name {
+        color: #f9b43b;
+      }
+      
     }
   }
   &__text {
     overflow: hidden;
     height: 0;
+    margin-left: rem(21px);
+    margin-top: rem(10px);
   }
   &__proffesion{
     overflow: hidden;
     height: 0;
+    margin-left: rem(21px);
   }
   
-  &__name {
-    @include gagalin;
-    color: #f9b43b;
-    font-size: 24,5px;
-  }
+  
   
   &__wrapper {
     display: flex;
@@ -72,6 +85,9 @@
     object-fit: cover;
     display: none;
   }
+  &__avatar--redkliff {
+    background: url(/img/content/redkliff.jpg) center center / cover no-repeat;
+  }
 }
 
 
@@ -79,4 +95,8 @@
   display: none;
   height: rem(100px);
   width: rem(200px);
+}
+
+.team__name .team__item .active {
+  color: #f9b43b;
 }

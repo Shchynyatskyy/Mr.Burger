@@ -8,6 +8,9 @@
   <title>Mr.Burger</title>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" >
+  <link rel="stylesheet" href="/app/libs/OwlCarousel2/assets/owl.carousel.min.css" >
+  <link rel="stylesheet" href="/app/libs/OwlCarousel2/assets/owl.theme.default.min.css">
+  
 </head>
 
 <body>
@@ -105,81 +108,359 @@
       </div>
     </section>
     <section class="section slider" id="scroll_3">
-      <button type="button" class="scroll scroll__left">
+      <button id="burger__slider--left" type="button" class="scroll scroll__left">
         <img src="/img/icons/scroll_left.png" alt="">
       </button>
-      <ul class="slides">
-        <li class="slide">
-          <div class="slide__picture">
-            <div class="composition">
-              <div class="composition__img">
+      <div class="slider__wrapper">
+        <div class="owl-carousel">
+          <div class="slide">
+            <div class="slide__picture">
+              <div class="composition">
+                <div class="composition__img">
+                </div>
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_beef.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Говядина</span>
+                      <span class="dropdown__weight">300гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_bread.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Булочки</span>
+                      <span class="dropdown__weight">100гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_salad.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Зелень</span>
+                      <span class="dropdown__weight">70гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_sauce.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Соус</span>
+                      <span class="dropdown__weight">150гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cucumber.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Овощи</span>
+                      <span class="dropdown__weight">200гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cheese.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Сыр</span>
+                      <span class="dropdown__weight">80гр</span              </li>
+                </ul>
               </div>
-              <ul class="dropdown">
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_beef.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Говядина</span>
-                    <span class="dropdown__weight">300гр</span>
-                </li>
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_bread.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Булочки</span>
-                    <span class="dropdown__weight">100гр</span>
-                </li>
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_salad.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Зелень</span>
-                    <span class="dropdown__weight">70гр</span>
-                </li>
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_sauce.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Соус</span>
-                    <span class="dropdown__weight">150гр</span>
-                </li>
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_cucumber.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Овощи</span>
-                    <span class="dropdown__weight">200гр</span>
-                </li>
-                <li class="dropdown__item">
-                  <div class="dropdown__pic">
-                    <img src="/img/icons/drop_cheese.png" alt="">
-                  </div>
-                    <span class="dropdown__text">Сыр</span>
-                    <span class="dropdown__weight">80гр</span              </li>
-              </ul>
+              <div class="slide__image">
+                <img src="/img/content/dark_beef_burger.png" alt="Dark beef burger">
+              </div>
+              <div class="calories">
+                <img src="/img/icons/kkal.png" alt="">
+              </div>
             </div>
-            <div class="slide__image">
-              <img src="/img/content/dark_beef_burger.png" alt="Dark beef burger">
-            </div>
-            <div class="calories">
-              <img src="/img/icons/kkal.png" alt="">
+            <div class="slide__content">
+              <h2 class="section__title section__title--color--white">Dark beef burger</h2>
+              <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
+                говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
+                и соусом гриль теперь с добавлением экзотического соуса чураско.
+              </span>
+              <div class="slide__price">
+                <h2 class="slide__price--value">500</h2>
+                <span class="slide__price--currency">рублей</span>
+                <a href="#" class="btn">Заказать</a>
+              </div>
             </div>
           </div>
-          <div class="slide__content">
-            <h2 class="section__title section__title--color--white">Dark beef burger</h2>
-            <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
-              говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
-              и соусом гриль теперь с добавлением экзотического соуса чураско.
-            </span>
-            <div class="slide__price">
-              <h2 class="slide__price--value">500</h2>
-              <span class="slide__price--currency">рублей</span>
-              <a href="#" class="btn">Заказать</a>
+          <div class="slide">
+            <div class="slide__picture">
+              <div class="composition">
+                <div class="composition__img">
+                </div>
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_beef.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Говядина</span>
+                      <span class="dropdown__weight">300гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_bread.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Булочки</span>
+                      <span class="dropdown__weight">100гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_salad.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Зелень</span>
+                      <span class="dropdown__weight">70гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_sauce.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Соус</span>
+                      <span class="dropdown__weight">150гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cucumber.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Овощи</span>
+                      <span class="dropdown__weight">200гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cheese.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Сыр</span>
+                      <span class="dropdown__weight">80гр</span              </li>
+                </ul>
+              </div>
+              <div class="slide__image">
+                <img src="/img/content/Chiken_burger.png" alt="Chiken burger">
+              </div>
+              <div class="calories">
+                <img src="/img/icons/kkal.png" alt="">
+              </div>
+            </div>
+            <div class="slide__content">
+              <h2 class="section__title section__title--color--white">Chiken burger</h2>
+              <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
+                говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
+                и соусом гриль теперь с добавлением экзотического соуса чураско.
+              </span>
+              <div class="slide__price">
+                <h2 class="slide__price--value">500</h2>
+                <span class="slide__price--currency">рублей</span>
+                <a href="#" class="btn">Заказать</a>
+              </div>
             </div>
           </div>
-        </li>
-      </ul>
-      <button type="button" class="scroll scroll__right">
+          <div class="slide">
+            <div class="slide__picture">
+              <div class="composition">
+                <div class="composition__img">
+                </div>
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_beef.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Говядина</span>
+                      <span class="dropdown__weight">300гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_bread.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Булочки</span>
+                      <span class="dropdown__weight">100гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_salad.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Зелень</span>
+                      <span class="dropdown__weight">70гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_sauce.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Соус</span>
+                      <span class="dropdown__weight">150гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cucumber.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Овощи</span>
+                      <span class="dropdown__weight">200гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cheese.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Сыр</span>
+                      <span class="dropdown__weight">80гр</span              </li>
+                </ul>
+              </div>
+              <div class="slide__image">
+                <img src="/img/content/burger_sandwich.png" alt="burger sandwich">
+              </div>
+              <div class="calories">
+                <img src="/img/icons/kkal.png" alt="">
+              </div>
+            </div>
+            <div class="slide__content">
+              <h2 class="section__title section__title--color--white">Burger sandwich</h2>
+              <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
+                говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
+                и соусом гриль теперь с добавлением экзотического соуса чураско.
+              </span>
+              <div class="slide__price">
+                <h2 class="slide__price--value">500</h2>
+                <span class="slide__price--currency">рублей</span>
+                <a href="#" class="btn">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__picture">
+              <div class="composition">
+                <div class="composition__img">
+                </div>
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_beef.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Говядина</span>
+                      <span class="dropdown__weight">300гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_bread.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Булочки</span>
+                      <span class="dropdown__weight">100гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_salad.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Зелень</span>
+                      <span class="dropdown__weight">70гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_sauce.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Соус</span>
+                      <span class="dropdown__weight">150гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cucumber.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Овощи</span>
+                      <span class="dropdown__weight">200гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cheese.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Сыр</span>
+                      <span class="dropdown__weight">80гр</span              </li>
+                </ul>
+              </div>
+              <div class="slide__image">
+                <img src="/img/content/NYC-Diner-Bacon-Cheeseburger.png" alt="NYC">
+              </div>
+              <div class="calories">
+                <img src="/img/icons/kkal.png" alt="">
+              </div>
+            </div>
+            <div class="slide__content">
+              <h2 class="section__title section__title--color--white">NYC Cheeseburger</h2>
+              <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
+                говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
+                и соусом гриль теперь с добавлением экзотического соуса чураско.
+              </span>
+              <div class="slide__price">
+                <h2 class="slide__price--value">500</h2>
+                <span class="slide__price--currency">рублей</span>
+                <a href="#" class="btn">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__picture">
+              <div class="composition">
+                <div class="composition__img">
+                </div>
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_beef.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Говядина</span>
+                      <span class="dropdown__weight">300гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_bread.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Булочки</span>
+                      <span class="dropdown__weight">100гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_salad.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Зелень</span>
+                      <span class="dropdown__weight">70гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_sauce.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Соус</span>
+                      <span class="dropdown__weight">150гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cucumber.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Овощи</span>
+                      <span class="dropdown__weight">200гр</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <div class="dropdown__pic">
+                      <img src="/img/icons/drop_cheese.png" alt="">
+                    </div>
+                      <span class="dropdown__text">Сыр</span>
+                      <span class="dropdown__weight">80гр</span              </li>
+                </ul>
+              </div>
+              <div class="slide__image">
+                <img src="/img/content/Spicy_Shrimp_Burger.png" alt="Spicy Shrimp Burger">
+              </div>
+              <div class="calories">
+                <img src="/img/icons/kkal.png" alt="">
+              </div>
+            </div>
+            <div class="slide__content">
+              <h2 class="section__title section__title--color--white">Spicy Shrimp Burger</h2>
+              <span class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% 
+                говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом 
+                и соусом гриль теперь с добавлением экзотического соуса чураско.
+              </span>
+              <div class="slide__price">
+                <h2 class="slide__price--value">500</h2>
+                <span class="slide__price--currency">рублей</span>
+                <a href="#" class="btn">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="burger__slider--right" type="button" class="scroll scroll__right">
         <img src="/img/icons/scroll_right.png" alt="">
       </button>
     </section>
@@ -190,7 +471,7 @@
         <li class="team__item">
           <p class="team__name">Дэниэл Редклиф</p>
           <div class="team__wrapper">
-            <div class="team__avatar"></div>
+            <div class="team__avatar team__avatar--redkliff"></div>
             <div class="team__content">
               <p class="team__proffesion">Оператор</p>
               <p class="team__text">
@@ -199,8 +480,8 @@
             </div>
           </div>
         </li>
-        <li class="team__item">
-          <p class="team__name">Дэниэл Редклиф</p>
+        <li class="team__item active">
+          <p class="team__name">Ричард Джеймс</p>
           <div class="team__wrapper">
             <div class="team__avatar"></div>
             <div class="team__content">
@@ -212,7 +493,7 @@
           </div>
         </li>
         <li class="team__item">
-          <p class="team__name">Дэниэл Редклиф</p>
+          <p class="team__name">Джейк Финн</p>
           <div class="team__wrapper">
             <div class="team__avatar"></div>
             <div class="team__content">
@@ -224,7 +505,7 @@
           </div>
         </li>
         <li class="team__item">
-          <p class="team__name">Дэниэл Редклиф</p>
+          <p class="team__name">Николай Иванов</p>
           <div class="team__wrapper">
             <div class="team__avatar"></div>
             <div class="team__content">
@@ -520,15 +801,15 @@
       <li class="fixed__menu--item"><a class="fixed__menu--link" href="#scroll_9"></a></li>
     </ul>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="/main.js"></script>
   <script srs="/js/hamburger.js"></script>
+  <script src="/app/libs/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="/app/libs/OwlCarousel2/owl.carousel.min.js"></script>
+  <script src="/js/slider.js"></script>
   <script src="/js/menu.js"></script>
   <script src="/js/team_acco.js"></script>
   <script src="/js/form.js"></script>
-  <script src="/js/map.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtiVsfdohRX1JWU0Sf9GLcSG3tAE-FW04&callback=initMap"
-    async defer></script>
   <script src="/js/video.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtiVsfdohRX1JWU0Sf9GLcSG3tAE-FW04&callback=initMap" async defer></script>
+  <script src="/js/map.js"></script>
 </body>
 </html>
