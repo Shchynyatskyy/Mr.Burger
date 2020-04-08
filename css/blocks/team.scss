@@ -20,6 +20,9 @@
 }
 
 .team {
+  align-self: flex-start;
+  margin-left: 116px;
+  
   &__title {
     margin-top: rem(113px);
   }

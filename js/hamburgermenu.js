@@ -1,5 +1,3 @@
-// Hamburger Menu
-
 const hamburgerMenu = document.querySelector(".hamburger__menu");
 const nav = document.querySelector(".nav")
 
