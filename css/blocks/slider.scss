@@ -27,9 +27,28 @@ justify-content: space-around;
 
       &__content {
         flex: 1;
+        margin-left: 9px;
       }
+
       &__price {
         display: flex;
+        @include gagalin();
+        align-items: baseline;
+        color: #e35028;
+        
+        &--value {
+          font-size: 72px;
+
+        }
+
+        &--currency {
+          font-size: 30px;
+        }
+      }
+
+      &__image {
+        height: 329px;
+        width: 505px;
       }
 
       @include tablets {

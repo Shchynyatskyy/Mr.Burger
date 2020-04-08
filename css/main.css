@@ -791,6 +791,9 @@ img {
   text-transform: none;
   font-weight: normal;
 }
+.btn__slider {
+  margin-left: 29px;
+}
 
 .scroll {
   padding: 0;
@@ -936,8 +939,6 @@ img {
 .team {
   align-self: flex-start;
   margin-left: 116px;
-  font-family: "Ubuntu", Helvetica, sans-serif;
-  font-weight: 300;
 }
 .team__title {
   margin-top: 7.0625rem;
@@ -962,6 +963,8 @@ img {
 }
 .team__item.active .team__content {
   display: block;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
 }
 .team__item.active .team__name {
   color: #f9b43b;
@@ -1258,9 +1261,23 @@ img {
 }
 .slider .slide__content {
   flex: 1;
+  margin-left: 9px;
 }
 .slider .slide__price {
   display: flex;
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  align-items: baseline;
+  color: #e35028;
+}
+.slider .slide__price--value {
+  font-size: 72px;
+}
+.slider .slide__price--currency {
+  font-size: 30px;
+}
+.slider .slide__image {
+  height: 329px;
+  width: 505px;
 }
 @media screen and (max-width: 768px) {
   .slider .slide {
