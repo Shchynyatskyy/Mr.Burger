@@ -170,7 +170,7 @@ function onepagescroll(selector, options) {
 
 	//bind touch
 	document.addEventListener('touchstart', function(e) {
-		e.preventDefault();
+		// e.preventDefault();
 		if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
 		var touch = e.touches[0] || e.changedTouches[0];
 			if(setting.direction == 'vertical')
@@ -181,7 +181,7 @@ function onepagescroll(selector, options) {
 	});
 
 	document.addEventListener('touchend', function(e) {
-		e.preventDefault();
+		// e.preventDefault();
 
 		if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
 			var touch = e.touches[0] || e.changedTouches[0];
