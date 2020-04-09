@@ -747,6 +747,7 @@ img {
 .hero__content {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 0.8;
 }
 @media screen and (max-width: 768px) {
@@ -758,6 +759,13 @@ img {
   height: 20.625rem;
   width: 23.125rem;
 }
+@media screen and (max-width: 768px) {
+  .hero__image {
+    height: 326px;
+    width: 368px;
+    margin-bottom: 40px;
+  }
+}
 .hero__desc {
   font-size: 4.0625rem;
   font-family: "Lifehack-Medium";
@@ -766,6 +774,8 @@ img {
 @media screen and (max-width: 768px) {
   .hero__text {
     text-align: center;
+    height: 219px;
+    width: 406px;
   }
 }
 
@@ -935,10 +945,22 @@ img {
   top: 0;
   bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .proff__section {
+    width: 100%;
+  }
+}
 
 .team {
   align-self: flex-start;
   margin-left: 116px;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    align-self: center;
+    margin: 0;
+    font-size: 25px;
+  }
 }
 .team__title {
   margin-top: 7.0625rem;
@@ -947,6 +969,11 @@ img {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   color: white;
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .team__name {
+    text-align: center;
+  }
 }
 .team__item {
   margin-bottom: 2.1875rem;
@@ -975,13 +1002,29 @@ img {
   margin-left: 1.3125rem;
   margin-top: 0.625rem;
 }
+@media screen and (max-width: 768px) {
+  .team__text {
+    text-align: center;
+  }
+}
 .team__proffesion {
   overflow: hidden;
   height: 0;
   margin-left: 1.3125rem;
 }
+@media screen and (max-width: 768px) {
+  .team__proffesion {
+    text-align: center;
+  }
+}
 .team__wrapper {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .team__avatar {
   background: url(/img/content/team_avatar.jpg) center center;
@@ -992,6 +1035,7 @@ img {
   width: 6.25rem;
   object-fit: cover;
   display: none;
+  margin: 15px;
 }
 .team__avatar--redkliff {
   background: url(/img/content/redkliff.jpg) center center/cover no-repeat;
@@ -1254,17 +1298,20 @@ img {
   align-items: center;
   width: 100%;
   position: relative;
-  height: 35.625rem;
+  height: 100%;
 }
 .slider .slide__picture {
   flex: 1;
+  margin-bottom: 26px;
 }
 .slider .slide__content {
   flex: 1;
   margin-left: 9px;
+  text-align: center;
 }
 .slider .slide__price {
   display: flex;
+  justify-content: center;
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   align-items: baseline;
   color: #e35028;

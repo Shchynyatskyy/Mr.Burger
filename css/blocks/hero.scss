@@ -12,6 +12,7 @@
   &__content {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex: .8;
   
     @include tablets {
@@ -23,6 +24,12 @@
   &__image {
     height: rem(330px);
     width: rem(370px);
+
+    @include tablets {
+      height: 326px;
+      width: 368px;
+      margin-bottom: 40px;
+    }
   }
   
   &__desc {
@@ -36,6 +43,8 @@
   
     @include tablets {
       text-align: center;
+      height: 219px;
+      width: 406px;
     }
   }
 }

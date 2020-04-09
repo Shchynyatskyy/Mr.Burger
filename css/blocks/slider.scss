@@ -19,19 +19,22 @@ justify-content: space-around;
       align-items: center;
       width: 100%;
       position: relative;
-      height: rem(570px);
+      height: 100%;
 
       &__picture {
         flex: 1;
+        margin-bottom: 26px;
       }
 
       &__content {
         flex: 1;
         margin-left: 9px;
+        text-align: center;
       }
 
       &__price {
         display: flex;
+        justify-content: center;
         @include gagalin();
         align-items: baseline;
         color: #e35028;
