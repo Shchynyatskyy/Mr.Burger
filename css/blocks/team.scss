@@ -44,6 +44,7 @@
 
     @include tablets {
       text-align: center;
+      font-size: 25px;
     }
   }
  
@@ -53,6 +54,7 @@
     &.active {
       .team__text {
         height: auto;
+        
       }
 
       .team__proffesion{
@@ -84,6 +86,7 @@
 
     @include tablets{
       text-align: center;
+      margin: 0;
     }
   }
   &__proffesion{
@@ -93,6 +96,7 @@
 
     @include tablets {
       text-align: center;
+      margin: 0;
     }
   }
   
@@ -128,6 +132,10 @@
   display: none;
   height: rem(100px);
   width: rem(200px);
+
+  @include tablets {
+    width: 331px;
+  }
 }
 
 .team__name .team__item .active {

@@ -879,6 +879,12 @@ img {
   width: 25%;
   height: 50%;
 }
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    width: 50%;
+    height: 25%;
+  }
+}
 
 .review {
   position: relative;
@@ -973,6 +979,7 @@ img {
 @media screen and (max-width: 768px) {
   .team__name {
     text-align: center;
+    font-size: 25px;
   }
 }
 .team__item {
@@ -1005,6 +1012,7 @@ img {
 @media screen and (max-width: 768px) {
   .team__text {
     text-align: center;
+    margin: 0;
   }
 }
 .team__proffesion {
@@ -1015,6 +1023,7 @@ img {
 @media screen and (max-width: 768px) {
   .team__proffesion {
     text-align: center;
+    margin: 0;
   }
 }
 .team__wrapper {
@@ -1045,6 +1054,11 @@ img {
   display: none;
   height: 6.25rem;
   width: 12.5rem;
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    width: 331px;
+  }
 }
 
 .team__name .team__item .active {
@@ -1116,6 +1130,11 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .delivery-form {
+    justify-content: center;
+  }
 }
 
 .delivery .section-header_yellow {
