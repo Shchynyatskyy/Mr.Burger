@@ -25,8 +25,12 @@
         width: rem(500px);
         background-color: rgba(0, 0, 0, 0.7);
       }
+      .menu__link span {
+        color: #f9b43b;
+      }
     }
   }
+ 
   &__link {
     width: rem(80px);
     display: block;
@@ -60,4 +64,6 @@
     margin-right: rem(37px);
   }
 }
+
+
 

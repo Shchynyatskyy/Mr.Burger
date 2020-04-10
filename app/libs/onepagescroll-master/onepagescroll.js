@@ -6,13 +6,13 @@
 */
 
 function onepagescroll(selector, options) {
-	var pages = [];
-	var currentPage = 1;
-	var isPageChanging = false;
-	var keyUp = {38:1,33:1};
-	var keyDown = {40:1,34:1};
+	let pages = [];
+	let currentPage = 1;
+	let isPageChanging = false;
+	let keyUp = {38:1,33:1};
+	let keyDown = {40:1,34:1};
 	
-	var def = {
+	let def = {
 		pageContainer: 'section',
 		animationType: 'ease-in-out',
 		animationTime: 500,
@@ -22,7 +22,7 @@ function onepagescroll(selector, options) {
 		direction: 'vertical',
 	};
 
-	var setting = extend({},def,options);
+	let setting = extend({},def,options);
 
 	/* initialization */
 	function init(){
@@ -49,18 +49,18 @@ function onepagescroll(selector, options) {
 			isPageChanging = false;
 		});
 
-		var bullet_list_container = null;
+		let bullet_list_container = null;
 		/* create navigation bullets */
 		if(setting.pagination){
 			bullet_list_container = document.createElement("ul");
 			bullet_list_container.classList.add('ops-navigation');
 		}
 		
-		var index=1;
+		let index=1;
 		[].forEach.call(document.querySelectorAll(selector + ' > ' + setting.pageContainer), function(obj){
 			if(setting.pagination){
-				var bullet_list = document.createElement('li');
-				var bullet = document.createElement('a');
+				let bullet_list = document.createElement('li');
+				let bullet = document.createElement('a');
 				bullet.setAttribute('data-targetindex',index);
 				bullet.href='#';
 				bullet_list.appendChild(bullet);
@@ -98,9 +98,9 @@ function onepagescroll(selector, options) {
 
 	/* dected transitions completion for block duplicated scrolling */
 	function detectTransitionEnd(){
-	    var t;
-	    var el = document.createElement('fakeelement');
-	    var transitions = {
+	    let t;
+	    let el = document.createElement('fakeelement');
+	    let transitions = {
 	      'transition':'transitionend',
 	      'OTransition':'oTransitionEnd',
 	      'MozTransition':'transitionend',
@@ -116,7 +116,7 @@ function onepagescroll(selector, options) {
 
 	/* css setter */
 	function css(obj,styles){
-		for (var _style in styles)
+		for (let _style in styles)
 			if(obj.style[_style] !== undefined)
 				obj.style[_style] = styles[_style];
 		
@@ -124,8 +124,8 @@ function onepagescroll(selector, options) {
 
 	/* extend function for user customization */
 	function extend(){
-	    for(var i=1; i<arguments.length; i++)
-	        for(var key in arguments[i])
+	    for(let i=1; i<arguments.length; i++)
+	        for(let key in arguments[i])
 	            if(arguments[i].hasOwnProperty(key))
 	                arguments[0][key] = arguments[i][key];
 	    return arguments[0];
@@ -164,15 +164,15 @@ function onepagescroll(selector, options) {
 	}
 
 	/* swipe */
-	var fpos = 0;
-	var lpos = 0;
-	var _n = 90;
+	let fpos = 0;
+	let lpos = 0;
+	let _n = 90;
 
 	//bind touch
 	document.addEventListener('touchstart', function(e) {
 		// e.preventDefault();
 		if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
-		var touch = e.touches[0] || e.changedTouches[0];
+		let touch = e.touches[0] || e.changedTouches[0];
 			if(setting.direction == 'vertical')
 				fpos = touch.pageY;
 			else if(setting.direction == 'horizontal')
@@ -184,7 +184,7 @@ function onepagescroll(selector, options) {
 		// e.preventDefault();
 
 		if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
-			var touch = e.touches[0] || e.changedTouches[0];
+			let touch = e.touches[0] || e.changedTouches[0];
 			if(setting.direction == 'vertical')
 				lpos = touch.pageY;
 			else if(setting.direction == 'horizontal')

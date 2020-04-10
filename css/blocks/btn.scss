@@ -27,4 +27,10 @@
   }
 }
 
+.ops-navigation {
+  @include tablets{
+    display: none;
+  }
+}
+
 
