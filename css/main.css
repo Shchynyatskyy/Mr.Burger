@@ -1333,12 +1333,22 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .slider__wrapper {
+    max-width: 486px;
+  }
+}
 .slider .slide {
   display: flex;
   align-items: center;
   width: 100%;
   position: relative;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .slider .slide {
+    width: 460px;
+  }
 }
 .slider .slide__picture {
   margin-bottom: 26px;
@@ -1363,6 +1373,12 @@ img {
 }
 .slider .slide__image {
   width: 450px;
+}
+@media screen and (max-width: 480px) {
+  .slider .slide__image {
+    width: 400px;
+    height: 260px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider .slide {

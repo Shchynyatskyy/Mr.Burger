@@ -12,6 +12,10 @@ justify-content: space-around;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include phones {
+      max-width: 486px;
+    }
   }
 
     .slide{  
@@ -20,6 +24,10 @@ justify-content: space-around;
       width: 100%;
       position: relative;
       height: 100%;
+
+      @include phones {
+        width: 460px;
+      }
 
       &__picture {
         margin-bottom: 26px;
@@ -50,6 +58,11 @@ justify-content: space-around;
 
       &__image {
         width: 450px;
+
+        @include phones {
+          width: 400px;
+          height: 260px;
+        }
       }
 
       @include tablets {
