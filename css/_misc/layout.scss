@@ -44,6 +44,21 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &__video {
+    height: 370px;
+    width: 660px;
+
+    @include tablets {
+      width: 719px;
+      height: 407px;
+    }
+
+    @include phones {
+      height: 260px;
+      width: 460px;
+    }
+  }
 }
 
 h1,

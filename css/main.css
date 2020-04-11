@@ -514,6 +514,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container__video {
+  height: 370px;
+  width: 660px;
+}
+@media screen and (max-width: 768px) {
+  .container__video {
+    width: 719px;
+    height: 407px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__video {
+    height: 260px;
+    width: 460px;
+  }
+}
 
 h1,
 h2,
@@ -902,6 +918,28 @@ img {
     width: 50%;
     height: 25%;
   }
+}
+
+.review-popup {
+  display: none;
+}
+.review-popup.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.review-popup__content {
+  width: 300px;
+  height: 500px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .review {

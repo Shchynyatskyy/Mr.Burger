@@ -19,3 +19,20 @@
     display: flex;
   }
 }
+
+.feature {
+  text-align: center;
+}
+
+.feature__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(36px);
+}
+
+.feature__title {
+  font-size: 24px;
+  @include lifehack();
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
