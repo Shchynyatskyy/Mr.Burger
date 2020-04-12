@@ -465,6 +465,7 @@ template {
 }
 html,
 body {
+  height: 100%;
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
@@ -528,6 +529,12 @@ body {
   .container__video {
     height: 260px;
     width: 460px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container__video {
+    height: 230px;
+    width: 310px;
   }
 }
 
@@ -1575,6 +1582,11 @@ img {
   padding: 0.6875rem 0;
   height: 3.75rem;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 0;
+  }
+}
 .footer__container {
   display: flex;
   flex-direction: row;
@@ -1588,12 +1600,22 @@ img {
   color: #ffffff;
   font-size: 0.875rem;
 }
+@media screen and (max-width: 480px) {
+  .footer__address {
+    font-size: 0.75rem;
+  }
+}
 .footer__phone {
   color: #e35028;
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 0.875rem;
+}
+@media screen and (max-width: 480px) {
+  .footer__phone {
+    font-size: 0.75rem;
+  }
 }
 .footer__col_right {
   text-align: right;

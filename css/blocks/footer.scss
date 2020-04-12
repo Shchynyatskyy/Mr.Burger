@@ -2,7 +2,11 @@
 	background: url(/img/bg/footer.jpg) center bottom no-repeat;
 	background-size: cover;
   padding: rem(11px) 0;
-  height: rem(60px);
+	height: rem(60px);
+	
+	@include phones {
+		padding: 0;
+	}
 
 	&__container {
 		display: flex;
@@ -20,6 +24,11 @@
 	&__address {
 		color: #ffffff;
 		font-size: rem(14px);
+
+		@include phones {
+			font-size: rem(12px)
+		}
+		
 	}
 	
 	&__phone {
@@ -27,6 +36,10 @@
 		@include ubuntu(bold);
 		text-decoration: none;
 		font-size: rem(14px);
+
+		@include phones {
+			font-size: rem(12px)
+		}
 	}
 	
 	&__col_right {
