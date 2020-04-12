@@ -1,11 +1,8 @@
 .footer {
 	background: url(/img/bg/footer.jpg) center bottom no-repeat;
 	background-size: cover;
-  padding: rem(10px) 0;
-	height: rem(60px);
-	@include phones {
-		padding: 0;
-	}
+  padding: rem(11px) 0;
+  height: rem(60px);
 
 	&__container {
 		display: flex;

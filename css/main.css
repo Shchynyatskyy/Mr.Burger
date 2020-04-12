@@ -612,13 +612,13 @@ img {
 .section__title--color--white {
   color: #fff;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .section__title {
     font-size: 2.75rem;
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .section__title--slider {
     font-size: 27px;
   }
@@ -795,7 +795,7 @@ img {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .hero__image {
     height: 226px;
     width: 248px;
@@ -807,7 +807,7 @@ img {
   font-family: "Lifehack-Medium";
   line-height: 1.1;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .hero__desc {
     font-size: 40px;
   }
@@ -922,7 +922,7 @@ img {
 .feature {
   text-align: center;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .feature__content {
     width: 225px;
     margin-bottom: 18px;
@@ -935,7 +935,7 @@ img {
   align-items: center;
   margin-bottom: 2.25rem;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .feature__img {
     width: 60px;
     height: 60px;
@@ -1098,7 +1098,7 @@ img {
 .team__title {
   margin-top: 7.0625rem;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .team__title {
     margin-top: 30px;
   }
@@ -1477,7 +1477,7 @@ img {
     max-width: 486px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider__wrapper {
     max-width: 280px;
   }
@@ -1499,7 +1499,7 @@ img {
     width: 460px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider .slide {
     width: 280px;
   }
@@ -1512,7 +1512,7 @@ img {
   text-align: center;
   width: 450px;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider .slide__content {
     width: 230px;
   }
@@ -1527,7 +1527,7 @@ img {
 .slider .slide__price--value {
   font-size: 72px;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider .slide__price--value {
     font-size: 40px;
   }
@@ -1535,7 +1535,7 @@ img {
 .slider .slide__price--currency {
   font-size: 30px;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider .slide__price--currency {
     font-size: 19px;
   }
@@ -1549,7 +1549,7 @@ img {
     height: 260px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .slider .slide__image {
     width: 220px;
     height: 143px;
@@ -1565,13 +1565,8 @@ img {
 .footer {
   background: url(/img/bg/footer.jpg) center bottom no-repeat;
   background-size: cover;
-  padding: 0.625rem 0;
+  padding: 0.6875rem 0;
   height: 3.75rem;
-}
-@media screen and (max-width: 480px) {
-  .footer {
-    padding: 0;
-  }
 }
 .footer__container {
   display: flex;
@@ -1630,7 +1625,7 @@ img {
     top: 0;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .composition {
     height: 60px;
     width: 60px;
