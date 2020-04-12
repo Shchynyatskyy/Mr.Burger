@@ -1060,6 +1060,13 @@ img {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   font-size: 0.875rem;
 }
+@media screen and (max-width: 480px) {
+  .review__username {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 29px;
+  }
+}
 
 .proff {
   background: url("/img/bg/team.jpg") center center/cover no-repeat;
