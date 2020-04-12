@@ -9,6 +9,25 @@
       transform: scale(1);
     }
   }
+
+  &__text {
+    margin: 27px;
+
+    @include phones{
+      display: none;
+    }
+  }
+
+  &-popup__text {
+    margin: 30px;
+  }
+
+  &-popup__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .review__img-wrapper {

@@ -16,6 +16,11 @@
       top: 0;
     }
 
+    @include iphone {
+      height: 60px;
+      width: 60px;
+    }
+
   &:hover {
     .composition__img {
       background-color: #e35028;

@@ -30,12 +30,22 @@
       width: 368px;
       margin-bottom: 40px;
     }
+
+    @include iphone {
+      height: 226px;
+      width: 248px;
+      margin-bottom: 23px;
+    }
   }
   
   &__desc {
     font-size: rem(65px);
     @include lifehack();
     line-height: 1.1;
+
+    @include iphone {
+      font-size: 40px;
+    }
   }
   
   

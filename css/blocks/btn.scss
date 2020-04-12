@@ -33,4 +33,17 @@
   }
 }
 
+.review-popup__close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  background: url(/img/icons/close.png);
+  height: 15px;
+  width: 15px;
+  box-shadow: none;
+  border: none;
+}
+
 

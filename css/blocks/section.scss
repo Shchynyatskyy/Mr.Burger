@@ -28,6 +28,18 @@
   &--color--white {
     color: $white;
   }
+
+  @include iphone {
+    font-size: rem(44px);
+    margin-bottom: 20px;
+  }
+
+  &--slider {
+    @include iphone{
+      font-size: 27px;
+    }
+
+  }
 }
 
 

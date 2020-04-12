@@ -6,8 +6,10 @@
   flex-direction: row;
 
   &__title {
-    margin-top: rem(111px);
-    margin-left: rem(102px);
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    z-index: 1;
   }
 
   &__list {
@@ -19,11 +21,15 @@
   &__item {
     display: flex;
     height: 100%;
+    z-index: 2;
 
     &--active {
       .menu__content {
-        width: rem(500px);
+        width: 542px;
         background-color: rgba(0, 0, 0, 0.7);
+        @include phones {
+          width: 192px;
+        }
       }
       .menu__link span {
         color: #f9b43b;
@@ -32,7 +38,7 @@
   }
  
   &__link {
-    width: rem(80px);
+    width: 80px;
     display: block;
     height: 100%;
     background-size: cover;
@@ -46,10 +52,20 @@
     span {
       position: absolute;
       transform: rotate(-90deg);
-      bottom: rem(140px);
-      left: rem(-64px);
+      bottom: 140px;
+      left: -64px;
       white-space: nowrap;
 
+      @include phones{
+        left: -44px;
+        bottom: 80px;
+      }  
+
+    }
+
+    @include phones {
+      width: 43px;
+      font-size: 20px;
     }
   }
 

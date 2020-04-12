@@ -35,6 +35,10 @@
   
   &__title {
     margin-top: rem(113px);
+
+    @include iphone {
+      margin-top: 30px;
+    }
   }
   
   &__name {

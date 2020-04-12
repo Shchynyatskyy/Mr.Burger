@@ -13,21 +13,41 @@
 }
 
 .features__item {
-  width: calc(100% / 3 - rem(26px));
+  width: 215px;
+  margin: 15px;
 
   @include phones {
     display: flex;
+    width: auto;
+    margin: 0;
   }
 }
 
 .feature {
   text-align: center;
+
+  &__content {
+
+
+    @include iphone {
+    width: 225px;
+    margin-bottom: 18px;
+    }
+  }
 }
 
 .feature__img {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: rem(36px);
+
+  @include iphone {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+
+  }
 }
 
 .feature__title {
